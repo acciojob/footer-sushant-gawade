@@ -16,6 +16,7 @@
         }
         
         /* Custom styles for the social icons for better visual appeal */
+        /* Note: media-icon applies 'display: flex' to the individual circle for centering the glyph */
         .media-icon {
             @apply flex items-center justify-center w-10 h-10 rounded-full text-white transition-all duration-300;
         }
@@ -58,31 +59,31 @@
                     company
                 </a>
 
-                <!-- Social Media Icons -->
-                <div class="flex space-x-4">
+                <!-- Social Media Icons Container (Now includes the required 'media-icons' class and 'display: flex' from Tailwind 'flex') -->
+                <div class="media-icons flex space-x-4">
                     <!-- Facebook -->
                     <a href="https://facebook.com/company" target="_blank" aria-label="Facebook" 
-                       class="media-icons media-icon icon-facebook">
+                       class="media-icon icon-facebook">
                         <i class="fab fa-facebook-f text-lg"></i>
                     </a>
                     <!-- Twitter -->
                     <a href="https://twitter.com/company" target="_blank" aria-label="Twitter" 
-                       class="media-icons media-icon icon-twitter">
+                       class="media-icon icon-twitter">
                         <i class="fab fa-twitter text-lg"></i>
                     </a>
                     <!-- Instagram -->
                     <a href="https://instagram.com/company" target="_blank" aria-label="Instagram" 
-                       class="media-icons media-icon icon-instagram">
+                       class="media-icon icon-instagram">
                         <i class="fab fa-instagram text-lg"></i>
                     </a>
                     <!-- LinkedIn -->
                     <a href="https://linkedin.com/company" target="_blank" aria-label="LinkedIn" 
-                       class="media-icons media-icon icon-linkedin">
+                       class="media-icon icon-linkedin">
                         <i class="fab fa-linkedin-in text-lg"></i>
                     </a>
                     <!-- YouTube -->
                     <a href="https://youtube.com/company" target="_blank" aria-label="YouTube" 
-                       class="media-icons media-icon icon-youtube">
+                       class="media-icon icon-youtube">
                         <i class="fab fa-youtube text-lg"></i>
                     </a>
                 </div>
